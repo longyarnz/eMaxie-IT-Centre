@@ -10,3 +10,5 @@ The technologies used for the production of this website are:
 * RelayJS
 * PHP Mail System
 * SASS
+* Babel
+* Webpack
