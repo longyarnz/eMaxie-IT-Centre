@@ -1,0 +1,88 @@
+section{
+	width: 100% $force;
+	margin: auto;
+	text-align: left;
+	position: relative;
+	overflow: auto;
+	transition: all .5s ease-in;
+
+	&.landing-panel{
+		z-index: 0;
+	}
+
+	&.icon-panel{
+		position: absolute;
+		height: 100%;
+		top: 0;
+		background-color: rgba(#000, .7);
+
+		@media print {
+			background-color: #000;
+		}
+	}
+
+	&.midsection{
+		position: relative;
+		height: auto;
+		background-color: #fff;
+	}
+
+	&.section-white {
+		background-color: #f2f2f2;
+		padding: 5% 0px;
+
+		@media print, screen and (max-width: $max-tbl) {
+			padding-top: 0px;
+		}
+	}
+
+	&.section-black {
+		background-color: #fff;
+		padding: 5% 0px;
+
+		&.contact-section{
+			background-color: #f2f2f2;
+		}
+
+		@media print, screen and (max-width: $max-tbl) {
+			padding-top: 0px;
+		}
+	}
+
+	&.did-section{
+		background-color: #fff;
+		padding: 10% 0px 8%;
+
+		&:first-of-type{
+			background-color: #f00 $force;
+		}
+
+		@media print, screen and (max-width: $max-tbl) {
+			padding: 0px;
+		}
+	}
+
+	&.common-section{
+		background-color: transparent;
+	}
+
+	&.about-section{
+		@media print, screen and (max-width: $max-tbl) {
+			padding-top: 0px;
+		}
+	}
+
+	&.tile-panel{
+		position: relative;
+		height: auto;
+
+		div.block{
+			padding: 0px;
+			height: auto;
+		}
+	}
+
+	@media print {
+		background-color: #fff $force;
+	}
+}

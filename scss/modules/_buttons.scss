@@ -1,0 +1,141 @@
+button{
+	cursor: pointer;
+
+	&.name-form-old{
+		display: block;
+		border-radius: 50%;
+		background-color: $emaxie-color;
+		outline: none $force;
+		border: none;
+		padding: 18px 21px;
+		border: 2px solid $emaxie-color;
+		margin: auto;
+		cursor: pointer;
+		box-shadow: 0px 24px 24px -5px rgba(#000, .4);
+		transition: all .1s ease-in;
+
+		&:hover{
+			box-shadow: 0px 24px 24px -5px rgba(#000, .7);
+		}
+
+		&:active{
+			box-shadow: 0px 4px 12px -3px rgba(#000, .9);
+		}
+	}
+
+	&.name-form{
+		height: 28px;
+		font-family: 'DIN-B', $font;
+		font-size: 110%;
+		border: none;
+		color: $emaxie-color;
+		background-color: #fff;
+		transition: all .1s ease;
+		box-shadow: 0px 2px 4px rgba(#000, .3);
+
+		&:hover{
+			box-shadow: none;
+			box-shadow: 0px 8px 12px -4px rgba(#000, .3);
+		}
+
+		&:active{
+			box-shadow: 0px 2px 4px rgba(#000, .5);
+			outline: none;
+		}
+	}
+
+	&.icon-panel, &.print{
+		width: auto;
+		text-align: left;
+		display: block;
+		background-color: #fff;
+		border: 1px solid #a9a9a9;
+		padding: 5px;
+		font-family: 'DIN-B', $font;
+		color: $emaxie-color;
+		font-size: 110%;
+		position: relative;
+		overflow: hidden;
+		height: 34px;
+		margin-top: -4px;
+		margin-left: 2px;
+
+		&::before{
+			content: "DROP IT";
+			position: relative;
+			top: 0px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 2px 5px;
+			transition: all .2s ease-in;
+		}
+
+		&::after{
+			content: "\f087";
+			font-family: FontAwesome;
+			font-size: 180%;
+			position: absolute;
+			top: 100%;
+			bottom: 0;
+			padding: 4px 5px;
+			text-align: center;
+			left: 30%;
+			right: auto;
+			color: $brand-success;
+			transition: all .2s ease-in;
+		}
+
+		&:hover{
+			&::before{
+				top: -50px;
+			}
+
+			&::after{
+				top: -5%;
+			}
+		}
+	}
+
+	&.print{
+		margin-top: 20px;
+		outline: none $force;
+
+		&::before{
+			content: "PRINT";
+		}
+
+		&::after{
+			content: "\f02f";
+			left: 21%;
+			color: rgb(128, 128, 128);
+		}
+
+		@media print {
+			display: none;
+		}
+	}
+
+	&.close{
+		outline: none;
+		color: red;
+		border: none;
+		font-size: 140%;
+		font-weight: bold;
+		background-color: transparent;
+
+		&:hover{
+			color: darken(red, 2%);
+			background-color: darken(#fff, 10%);
+		}
+
+		&:active{
+			color: darken(red, 4%);
+			background-color: darken(#fff, 20%);
+		}
+
+		@media print {
+			display: none;
+		}
+	}
+}

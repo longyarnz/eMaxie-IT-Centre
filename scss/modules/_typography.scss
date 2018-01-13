@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5{
+	margin: 0;
+	padding: 0;
+}
+
+h1.emaxie{
+	color: #fff;
+	font-family: 'DIN-B', $font;
+	font-size: 300%;
+	text-transform: uppercase;
+
+	span{
+		color: $emaxie-color;
+	}
+
+	@media print, screen and (max-width: $max-pad) {
+		font-size: 225%;
+	}
+
+	@media print, screen and (max-width: $max-tbl) {
+		font-size: 150%;
+		margin-top: 40px;
+	}
+
+	&:last-of-type{
+		color: #000;
+	}
+}
+
+h1.jumbotron{
+	text-align: center;
+	font-size: 40%;
+
+	@media print, screen and (max-width: $max-pad) {
+		font-size: 225%;
+	}
+
+	@media print, screen and (max-width: $max-tbl) {
+		font-size: 120%;
+		margin-top: 40px;
+	}
+}
+
+h1.service-section, h1.did-section {
+	color: #000;
+}
+
+h2.jumbotron{
+	text-align: center;
+	font-size: 120%;
+	padding: 5px;
+	font-family: Montserrat, $font;
+	line-height: 1.8;
+	font-weight: 300;
+
+	span{
+		color: $emaxie-color;
+	}
+
+	@media print, screen and (max-width: $max-tbl) {
+		text-align: left;
+		padding: 15px 0px 0px;
+	}
+}

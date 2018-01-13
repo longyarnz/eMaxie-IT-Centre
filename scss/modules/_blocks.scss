@@ -1,0 +1,543 @@
+div.block{
+	overflow: auto;
+	position: relative;
+	padding: 0px 10%;
+	clear: both;
+	width: 100%;
+	height: 100%;
+
+	&.block-logo{
+		padding: 0px;
+		overflow-x: hidden;
+	}
+
+	div.logo {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+		font-family: 'DIN-B', $font;
+
+		img.logo{
+			width: 15%;
+			border-radius: 10px;
+			display: block;
+			background-color: #fff;
+			border: 1px solid #fff;
+			position: absolute;
+			left: 0.8%;
+			top: 2%;
+			right: auto;
+			box-shadow: 0px 4px 4px -2px rgba(#000, .3);
+
+			@media print, screen and (max-width: $max-tbl) {
+				width: 100%;
+		    position: relative;
+		    margin: 0px;
+		    left: 0;
+		    border-radius: 0;
+			}
+		}
+
+		h3{
+			position: absolute;
+			color: #fff;
+			top: 15%;
+			right: 15%;
+			font-size: 440%;
+			text-align: right;
+			padding: 0;
+			font-family: 'BioRhyme', 'DIN-B', $font;
+			font-weight: 800;
+
+			@media print, screen and (max-width: $max-pad) {
+				font-size: 280%;
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				display: none;
+			}
+		}
+
+		span{
+			display: none;
+			width: 70px;
+			margin: 5px 20px 0px;
+			overflow: auto;
+			font-size: 300%;
+			color: $emaxie-color;
+			background-color: #fff;
+			padding: 20px auto;
+			border-radius: 2px;
+			border: 1px solid $emaxie-color;
+			box-shadow: 0px 3px 6px -2px rgba(#000, .4);
+		}
+
+		img.bg{
+			width: 100%;
+			box-shadow: 0px 4px 4px -2px rgba(#000, .4);
+
+			@media print, screen and (max-width: $max-tbl) {
+				margin-top: 2%;
+				display: none;
+			}
+		}
+	}
+
+	div.tile-container{
+		position: relative;
+		width: 100%;
+		padding: 20px 0px;
+
+		div.tile{
+			// opacity: 0;
+			margin: 20px 10px;
+			width: calc(100% / 2 - 20px);
+			overflow: hidden;
+			height: 28%;
+			display: inline-block;
+			box-shadow: 0px 2px 4px rgba(#000, .3);
+			cursor: pointer;
+			transition: all .1s ease;
+			background-color: #fff;
+
+			a{
+				display: none;
+			}
+
+			&.centre{
+				box-shadow: none;
+				background-color: transparent;
+
+				&:hover{
+					box-shadow: none;
+				}
+			}
+
+			&:hover{
+				box-shadow: 0px 8px 18px -4px rgba(#000, .6);
+			}
+
+			&:active{
+				box-shadow: 0px 2px 4px rgba(#000, .3);
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				width: calc(100% - 5px);
+				margin: 20px 2px;
+			}
+		}
+
+		@media print, screen and (max-width: $max-tbl) {
+			padding-top: 10px;
+		}
+	}
+
+	div.jumbotron{
+		width: 100%;
+		position: relative;
+		padding: 2% 0px 3%;
+
+		span.slab{
+			background-color: $emaxie-color;
+			padding: 1px 20px;
+			color: #fff;
+			box-shadow: 0px 4px 4px -2px rgba(#000, .4);
+		}
+
+		span.slab-o{
+			color: $emaxie-color;
+		}
+
+		@media print, screen and (max-width: $max-tbl) {
+			padding: 0 4% 2%;
+		}
+	}
+
+	div.name-form{
+		width: 100%;
+
+		div.response-tab{
+			font-family: 'DIN-B', $font;
+			color: $success;
+			font-size: 120%;
+			line-height: 1.8;
+		}
+	}
+
+	div.icon-panel{
+		@extend .locator;
+		display: inline-block;
+		padding: 0px;
+		margin: 12% 0px 0px;
+		height: 61.25%;
+		border: 12px solid transparent;
+		overflow: hidden;
+		text-align: center;
+		box-shadow: 0px 4px 6px -2px rgba(#000, 1);
+
+		iframe{
+			width: 95%;
+			border: none;
+			height: calc(100% - 60px);
+			box-shadow: 0px 2px 8px rgba(#000, .4);
+			padding: 0px;
+			margin-top: 10px;
+		}
+
+		img.certificate-logo{
+			width: 20%;
+			display: block;
+
+			@media print {
+				width: 80%;
+				display: inline;
+				text-align: center;
+			}
+		}
+
+		span{
+			text-align: left;
+			display: block;
+			font-family: 'DIN-B', $font;
+			margin-top: 5px;
+
+			@media print {
+				margin: 20px auto;
+				text-align: center;
+			}
+		}
+
+		div.certificate{
+			width: 60%;
+			display: inline-block;
+			float: left;
+			margin-top: 5%;
+			text-align: left;
+			clear: right;
+
+			div{
+				font-family: BioRhyme, $font;
+				font-size: 250%;
+				font-weight: 300;
+				margin-bottom: 10%;
+				border-bottom: 1px solid red;
+				text-align: left;
+
+				label{
+					font-size: 50%;
+					font-weight: 300;
+					color: #333;
+
+					@media print, screen and (max-width: $max-pad) {
+						font-size: 70%;
+					}
+
+					@media print, screen and (max-width: $max-tbl) {
+						font-size: 60%;
+					}
+
+					@media print {
+						font-size: 60%;
+					}
+				}
+
+				&:last-of-type{
+					margin-bottom: 0;
+				}
+
+				@media print, screen and (max-width: $max-pad) {
+					font-size: 200%;
+				}
+
+				@media print, screen and (max-width: $max-tbl) {
+					font-size: 110%;
+				}
+
+				@media print {
+					font-size: 200%;
+				}
+			}
+
+			@media print, screen and (max-width: $max-pad) {
+				display: block;
+				float: none;
+				width: calc(100% - 5px);
+			}
+		}
+
+		aside.side-image{
+			display: inline-block;
+			width: 40%;
+			padding: 2%;
+			text-align: center;
+			position: relative;
+			float: left;
+			height: calc(100% - 34px);
+			opacity: inherit;
+
+			h1{
+				font-family: 'DIN-B', $font;
+				top: 70px;
+				position: relative;
+				font-size: 200%;
+			}
+
+			i{
+				margin: auto;
+				font-size: 1000%;
+				text-align: center;
+				color: $emaxie-color;
+				position: relative;
+				top: 50px;
+
+				&.fa-archive{
+					color: $archive;
+				}
+
+				&.fa-send{
+					color: $success;
+				}
+
+				&.fa-certificate{
+					color: red;
+				} 
+
+				@media print, screen and (max-width: $max-pad) {
+					font-size: 800%;
+				}
+
+				@media print, screen and (max-width: $max-tbl) {
+					font-size: 500%;
+				}
+			}
+
+			footer{
+				font-family: 'DIN-R', $font;
+				position: relative;
+				top: 70px;
+
+				@media print, screen and (max-width: $max-pad) {
+					font-size: 110%;
+				}
+			}
+
+			&.certificate-side-image{
+				@media print, screen and (max-width: $max-pad) {
+					float: none;
+				}
+
+				@media print, screen and (max-width: $max-tbl) {
+					display: block $force;
+					width: 100%;
+					min-height: 170px;
+
+					i{
+						top: 30px;
+					}
+
+					footer{
+						top: 30px;
+						font-size: 100%;
+
+						@media print {
+							top: 50px;
+						}
+					}					
+				}
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				display: none $force;
+				overflow-y: auto;
+			}
+		}
+
+		h1.icon-panel-title{
+			color: #000;
+			font-family: 'DIN-B', $font;
+			font-size: 200%;
+			text-align: left;
+			opacity: inherit;
+
+			@media print, screen and (max-width: $max-tbl) {
+				font-size: 130%;
+				font-family: 'DIN-M';
+			}
+		}
+
+		h1.certificate-title{
+			font-family: 'BioRhyme';
+			font-size: 300%;
+
+			@media print, screen and (max-width: $max-pad) {
+				font-size: 200%;
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				font-size: 110%;
+				margin-top: 5px;
+			}
+
+			@media print {
+				font-size: 200%;
+				text-align: center;
+			}
+		}
+
+		&.social-panel{
+			text-align: center;
+		}
+
+		@media print, screen and (max-width: $max-pad) {
+			margin-top: 9.8%;
+			height: auto;
+		}
+
+		@media print, screen and (max-width: $max-tbl) {
+			width: 92%;
+			height: auto;
+			margin-top: 13%;
+		}
+	}
+
+	div.contact-section, div.service-section, div.did-section, div.about-section, div.patronize-section {
+		text-align: center;
+
+		div.jumbotron{
+			padding: 4% 0% 0%;
+			font-size: 220%;
+			font-style: italic;
+			font-family: 'DIN-B', $font;
+
+			span{
+				font-weight: 900;
+				color: $emaxie-color;
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				font-size: 120%;
+				line-height: 1.8;
+			}
+		}
+
+		@media print, screen and (max-width: $max-tbl) {
+			margin: 20% 0px 15%;
+		}
+	}
+
+	div.patronize-section{
+		ul{
+			margin-top: 5%;
+			width: 100%;
+			padding: 20px 0px;
+			overflow: auto;
+
+			li{
+				display: inline-block;
+				background-color: #ccc;
+				color: #000;
+				margin: 10px 5px;
+				padding: 5px;
+				font-family: 'DIN-B', $font;
+				font-size: 110%;
+				cursor: pointer;
+				transition: all .1s ease;
+				box-shadow: inset 0px 8px 18px -4px rgba(#000, .3);
+
+				&:hover{
+					box-shadow: none;
+				}
+
+				&:active{
+					background-color: darken(#ccc, 30%);
+				}
+
+				@media print, screen and (max-width: $max-tbl) {
+					text-align: left;
+					font-family: 'DIN-R', $font;
+					float: none;
+				}
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				margin: 0px;
+			}
+		}
+	}
+
+	div.about-section{
+		p{
+			font-family: Montserrat, $font;
+			font-weight: 300;
+			color: #000;
+			font-size: 120%;
+			line-height: 1.8;
+
+			&:first-of-type{
+				margin-top: 5%;
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				font-weight: 300;
+				text-align: left;
+			}
+		}
+	}
+
+	div.service-section{
+		@media print, screen and (max-width: $max-tbl) {
+			margin-top: 5%;
+		}
+	}
+
+	div.common-section{
+		text-align: center;
+
+		h1{
+			color: #000;
+		}
+
+		ul {
+			text-align: center;
+
+			li{
+				background-color: #ccc;
+				box-shadow: none;
+				float: none;
+				
+				&:hover{
+					box-shadow: 0px 2px 4px rgba(#000, .5);
+				}
+
+				&:active{
+					box-shadow: none;
+					background-color: darken(#ccc, 10%);
+				}
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				margin: 0px;
+			}
+		}
+	}
+
+	@media print, screen and (min-width: $max-lg) {
+		padding: 0px 6%;
+	}
+
+	@media print, screen and (max-width: $max-tbl) {
+		padding: 0px 4%;
+	}
+}
+
+div.block-header{
+	padding: 0px $force;
+}
+
+div.close{
+	position: absolute;
+	right: 0px;
+	background-color: transparent;
+	z-index: 2;
+}

@@ -1,0 +1,55 @@
+@media screen and (max-width : 767px) {
+	// @font-face { 
+	// 	font-family: 'Prompt';
+	// 	src: url('../fonts/prompt/Prompt-Regular.ttf') format('truetype');
+	// //	font-weight: normal;
+	// 	font-style: normal;
+	// }
+
+	// @font-face { 
+	// 	font-family: 'aldrich';
+	// 	src: url('../fonts/aldrich/Aldrich-Regular.ttf') format('truetype');
+	// //	font-weight: normal;
+	// 	font-style: normal;
+	// }
+
+	// @font-face { 
+	// 	font-family: 'josefin sans reg';
+	// 	src: url('../fonts/josefin sans/JosefinSans-Regular.ttf') format('truetype');
+	// //	font-weight: normal;
+	// 	font-style: normal;
+	// }
+
+	// @font-face { 
+	// 	font-family: 'josefin sans';
+	// 	src: url('../fonts/josefin sans/JosefinSans-Thin.ttf') format('truetype');
+	// //	font-weight: normal;
+	// 	font-style: normal;
+	// }
+
+	// @font-face { 
+	// 	font-family: 'BioRhyme';
+	// 	src: url('../fonts/BioRhyme/BioRhyme-Regular.ttf') format('truetype');
+	// //	font-weight: normal;
+	// 	font-style: normal;
+	// }
+}
+
+*{
+	box-sizing: border-box;
+}
+
+html, body, div#root, div[data-reactroot]{
+	margin : 0 $force;
+	padding : 0 $force;
+	width : 100% $force;
+	height: 100% $force;
+	overflow-x: hidden;
+	font-family: 'DIN-R', 'Segoe UI', 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	background-color: #f2f2f2;
+}
+
+.fa{
+	cursor : pointer;
+}

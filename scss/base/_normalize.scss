@@ -1,0 +1,81 @@
+.no-display{
+	display : none $force;
+}
+
+.go-left{
+	transform : translate(-100%, 0%) $force;
+	transition: all .65s ease-out $force;
+}
+
+.go-right{
+	transform : translate(102%, 0%) $force;
+	transition: all .65s ease-out;
+}
+
+.go-center{
+	transform : translate(0%, 0%) $force;
+	transition: all 1s ease-in $force;
+}
+
+.go-up{
+	transform : translate(0%, -100%) $force;
+	transition: transform 1s ease-out;
+}
+
+.go-down{
+	transform : translate(0%, 100%) $force;
+	transition: transform 1s ease-out;
+}
+
+.low-index{
+	z-index: 1 $force;
+}
+
+.dim-opacity{
+	opacity: 0 $force;
+	z-index: -1 $force;
+	margin-top: 0 $force;
+	transition: opacity 2s ease $force;
+}
+
+.clear-0{
+	@include anime(0s);
+}
+
+.clear-1{
+	@include anime(0.7s);
+}
+
+.clear-2{
+	@include anime(1.2s);
+}
+
+.clear-3{
+	@include anime(1.7s);
+}
+
+.show{
+	display: block $force;
+}
+
+.locator{
+	padding: 4% 0px;
+	position: relative;
+	width: 61.75%;
+	height: 100%;
+	overflow-y: auto;
+	background-color: darken(#fff, 1%);
+	transition: all .2s ease-out 2s;
+}
+
+.center{
+	text-align: center;
+}
+
+.anime-on{
+	animation: pop-up .1s ease-out forwards;
+}
+
+.disabled{
+	cursor: not-allowed;
+}

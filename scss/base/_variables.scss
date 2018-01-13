@@ -1,0 +1,25 @@
+$force : !important;
+$dark-white : darken(#fff, 25%);
+$link-bg-color : lighten(#808080, 10%);
+$success : #09a709;
+$danger : rgba(255, 0, 0, 1);
+$lovely : rgba(255, 255, 0, 1);
+$dark-lovely : darken($lovely, 9%);
+$orange : rgba(253, 198, 29, 1);
+$primary : #00aff0;
+$choclate : lighten(rgba(34, 34, 34, 1), 10%);
+$red : rgba(255, 0, 0, 1);
+$facebook : darken(#337ab7, 5%) $force;
+$twitter : #74b1ff $force;
+$instagram: #844822 $force;
+$brand-primary: darken(#428bca, 6.5%) !default; // #337ab7
+$brand-success: #5cb85c !default;
+$brand-info: #5bc0de !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #d9534f !default;
+$emaxie-color: rgb(230, 0, 0); // darken(#f00, 5%);
+$archive: #b1a505;
+$max-lg: 1440px;
+$max-pad: 1024px;
+$max-tbl: 767px;
+$font: Helvetica, 'Trebuchet MS', Verdana, sans-serif;

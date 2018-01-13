@@ -1,0 +1,97 @@
+form{
+	outline: none $force;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+	div.form-control{
+		width: 100%;
+		position: relative;
+		padding: 0px 2px;
+		margin: 15px auto;
+
+		input.form-control, textarea.form-control, select.form-control{
+			width: 100%;
+			position: relative;
+			outline: none;
+			font-family: 'DIN-R', $font;
+			font-size: 110%;
+			padding: 5px;
+			box-shadow: none;
+			border: 1px solid #a9a9a9;
+
+			option{
+				outline: none $force;
+				border: 1px solid #f2f2f2 $force;
+				color: #a9a9a9;
+			}
+		}
+
+		&:first-of-type{
+			margin-top: 0px;
+		}
+	}
+
+	&.icon-panel{
+		width: 60%;
+		display: inline-block;
+		float: left;
+		color: #a9a9a9;
+		opacity: inherit;
+
+		input, textarea{
+			border: none;
+			background-color: #fff;
+		}
+
+		@media print, screen and (max-width: $max-tbl) {
+			margin-top: 10px;
+			width: 100%;
+			display: block;
+		}
+	}
+
+	&.name-form{
+		margin: 6% auto 2%;;
+		text-align: center;
+		padding: 15px;
+		outline: none $force;
+
+		div{
+			display: inline-block;
+			margin: 0px 10px;
+			width: 40%;
+			outline: none $force;
+
+			input {
+				width: 100%;
+				height: 28px;
+				padding: 4px 3px;
+				font-family: 'DIN-R', $font;
+				font-size: 110%;
+				border: 2px solid #a9a9a9;
+				margin-bottom: 10px;
+				outline: none $force;
+				box-shadow: none;
+			}
+
+			&:first-of-type{
+				margin-left: 0px;
+
+				@media print, screen and (max-width: $max-tbl) {
+					margin-top: 0px;
+				}
+			}
+
+			@media print, screen and (max-width: $max-tbl) {
+				display: block;
+				width: 100%;
+				margin: 20px 0px;
+			}
+		}
+
+		@media print, screen and (max-width: $max-tbl) {
+			text-align: center;
+		}
+	}
+}
