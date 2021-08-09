@@ -17,7 +17,7 @@
     "react-dom": "^15.5.4",
     "react-relay": "latest",
     "sequelize-relay": "^1.0.2",
-    "serve": "^6.0.0"
+    "serve": "^10.1.2"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.3",
